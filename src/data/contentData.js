@@ -1,3 +1,4 @@
+const IMAGE_BASE = `${import.meta.env.BASE_URL}images/`;
 // Site Content Database for "Slow Fashion on a Real Budget"
 
 export const SITE_METADATA = {
@@ -32,7 +33,7 @@ export const ARTICLES = [
     date: "Sep 10, 2026",
     readTime: "8 min read",
     budgetRating: "$0 - $25 per item",
-    image: "/images/hero.png",
+    image: IMAGE_BASE + "hero.png",
     featured: true,
     isCornerstone: true,
     summary: "Slow fashion isn't about buying a $200 linen jumpsuit from a boutique. It's about changing your relationship with clothing using what you already own, thrifting smart, and doing simple cost-per-wear math.",
@@ -77,7 +78,7 @@ Use our interactive **Cost-Per-Wear Calculator** below to check your next purcha
     date: "Sep 08, 2026",
     readTime: "6 min read",
     budgetRating: "$5 - $20 per find",
-    image: "/images/thrifting.png",
+    image: IMAGE_BASE + "thrifting.png",
     featured: true,
     summary: "Thrifting can be overwhelming when you're staring at rows of polyester. Learn the touch test, seam inspection, and sizing hacks to find hidden gems quickly.",
     content: `
@@ -110,7 +111,7 @@ A 1990s Size 12 is equivalent to a modern Size 6 or 8. Always carry a flexible m
     date: "Sep 04, 2026",
     readTime: "7 min read",
     budgetRating: "Free Apps / $10 - $40 items",
-    image: "/images/thrifting.png",
+    image: IMAGE_BASE + "thrifting.png",
     summary: "We tested Poshmark, Depop, ThredUp, Vinted, and eBay to see which offers the best filtering, lowest fees, and easiest returns for secondhand bargain hunters.",
     content: `
 # 5 Apps for Secondhand Shopping, Ranked by Ease of Use
@@ -136,7 +137,7 @@ Online thrifting allows you to search for exact materials, brands, and measureme
     date: "Aug 29, 2026",
     readTime: "5 min read",
     budgetRating: "$2 sewing kit",
-    image: "/images/mending.png",
+    image: IMAGE_BASE + "mending.png",
     featured: true,
     summary: "You don't need a sewing machine to double the life of your clothes. Master the button lock, backstitch for open seams, and invisible blind hem stitch.",
     content: `
@@ -165,7 +166,7 @@ Use a **Blind Catch Stitch** to re-secure falling trouser hems without thread sh
     date: "Aug 22, 2026",
     readTime: "9 min read",
     budgetRating: "Mix of Thrift & Owned",
-    image: "/images/capsule.png",
+    image: IMAGE_BASE + "capsule.png",
     featured: true,
     summary: "Step-by-step breakdown of 15 foundation garments—5 tops, 4 bottoms, 3 outerwear pieces, and 3 shoes—that interlock into 30 unique outfits for work and weekend.",
     content: `
@@ -192,7 +193,7 @@ Try our **Interactive Capsule Builder** on the site to test outfits right now!
     date: "Aug 18, 2026",
     readTime: "7 min read",
     budgetRating: "$18 - $48 average",
-    image: "/images/hero.png",
+    image: IMAGE_BASE + "hero.png",
     summary: "Finding affordable ethical basics is hard. We vetted 10 brands for labor transparency, materials used, and price points under $50.",
     content: `
 # 10 Sustainable Brands Under $50 a Piece
@@ -216,7 +217,7 @@ When you do need brand-new basics (like socks, underwear, or organic tees), here
     date: "Aug 12, 2026",
     readTime: "6 min read",
     budgetRating: "Educational Guide",
-    image: "/images/thrifting.png",
+    image: IMAGE_BASE + "thrifting.png",
     summary: "Cotton is natural, but conventional cotton uses massive amounts of water and pesticides. Here is how organic and thrifted cotton compare.",
     content: `
 # Is Cotton Actually Sustainable? The Honest Fabric Breakdown
@@ -239,7 +240,7 @@ Cotton is often marketed as the ultimate eco-friendly choice because it is natur
     date: "Aug 05, 2026",
     readTime: "5 min read",
     budgetRating: "Free Tool",
-    image: "/images/hero.png",
+    image: IMAGE_BASE + "hero.png",
     summary: "Don't fall for marketing traps! Learn what third-party certifications (GOTS, OEKO-TEX, Fair Trade) actually guarantee.",
     content: `
 # Greenwashing Red Flags: A Glossary for Budget Shoppers
