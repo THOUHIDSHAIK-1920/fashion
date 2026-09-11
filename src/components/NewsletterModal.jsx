@@ -8,17 +8,38 @@ export default function NewsletterModal({ isOpen, onClose }) {
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (email) {
-      setSubmitted(true);
-      confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 }
-      });
-    }
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (!email) return;
+
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbzK6wsVnhHcZ7BhUqgoFBcQ3m5lzSaoz3KHSPpg0nMVpFVQHi99PAE7mvDmMlnXP9TwDA/exec",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+        body: JSON.stringify({
+          email: email,
+        }),
+      }
+    );
+
+    setSubmitted(true);
+
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+    });
+
+  } catch (error) {
+    alert("Something went wrong. Please try again.");
+  }
+};
 
   return (
     <div style={{
